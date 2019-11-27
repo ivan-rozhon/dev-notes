@@ -29,7 +29,7 @@ const result$ = trigger$.pipe(
 
 ## Pattern #3
 
-### Group Aggregator
+### Group Aggregator
 
 Whenever the result is an `Observable<boolean>`
 
@@ -40,7 +40,7 @@ const TT$ = trueTrigger$.pipe(mapTo(true));
 const result$ = merge(FT$, TT$);
 ```
 
-## Pattern #4
+## Pattern #4
 
 ### State Manager
 

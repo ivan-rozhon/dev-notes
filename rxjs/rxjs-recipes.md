@@ -49,7 +49,7 @@ State that needs to be reactively managed
 ```
 const result$ = trigger$.pipe(
   scan((prevState, updates) => {
-    return { ...prevState, updates };
+    return { ...prevState, ...updates };
   })
 );
 ```
